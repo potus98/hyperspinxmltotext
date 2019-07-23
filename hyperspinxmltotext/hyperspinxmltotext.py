@@ -21,11 +21,14 @@ if __name__ == "__main__":
 
 	print (system_names(top_folder_filter))
 
-	system_folders = system_names(top_folder_filter)
-	print (menus_to_process(top_folder_filter, system_folders))
+	system_names_list = system_names(top_folder_filter)
 
-	menus_to_process_list = menus_to_process(top_folder_filter, system_folders)
-	for menu in menus_to_process_list:
-		doc = parse_xml_file(menu)
-		print ("processing file %s: ", menu)
-		print (game_descriptions(doc))
+	# print (menus_to_process(top_folder_filter, system_folders))
+	#menus_to_process_list = menus_to_process(top_folder_filter, system_names_list)
+	#for menu in menus_to_process_list:
+	#	doc = parse_xml_file(menu)
+	#	print ("processing file %s: ", menu)
+	#	print (game_descriptions(doc))
+
+	for system_name in system_names_list:
+		process_system(top_folder_filter, system_name)
