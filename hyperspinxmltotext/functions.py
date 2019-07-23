@@ -2,8 +2,8 @@ import os
 import sys
 import xml.dom.minidom
 
-def main():
-	# use the parse() function to load and parse an XML file
+def parse_xml_file():
+	# load and parse an XML file
 	doc = xml.dom.minidom.parse("../tests/menuexample.xml");
 
 	# print out the document node and a field
@@ -12,5 +12,5 @@ def main():
 	return (doc.nodeName)
 
 
-if __name__ == "__main__":
-	main();
+# if __name__ == "__main__":
+#	main();
