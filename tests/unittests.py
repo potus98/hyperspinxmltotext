@@ -20,5 +20,24 @@ class TestFileRead(unittest.TestCase):
 		# verify the game_names function returns... something?
 		self.assertTrue(functions.game_names(test_minidom_object))
 
+	
+	#def test_game_names(self, test_minidom_object):
+	#	# verify the game_names function returns... something?
+	#	self.assertEqual(functions.game_names(test_minidom_object), '1941')
+
+	#def test_game_descriptions(self):
+	#    # verify the expected game name can be extreacted from the test XML file
+	#	print("\ntesting game_descriptions...")
+	#	print("\nsetting test_xml_file...")
+	#	test_xml_file = "menuexample.xml"
+	#	print("\nsetting test_minidom_object...")
+	#	test_minidom_object = functions.parse_xml_file(test_xml_file)
+	#	print("test_minidom_object is:")
+	#	print(test_minidom_object)
+	#	print("\nsetting first_game value...")
+	#	first_game = functions.game_descriptions(test_minidom_object)
+	#	print(first_game)
+	#	self.assertEqual((first_game[0]), '1941: Counter Attack (World 900227)')
+
 if __name__ == '__main__':
 	unittest.main()
