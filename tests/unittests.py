@@ -20,12 +20,5 @@ class TestFileRead(unittest.TestCase):
 		# verify the game_names function returns... something?
 		self.assertTrue(functions.game_names(test_minidom_object))
 
-	#def test_game_descriptions(self, test_minidom_object):
-		# verify the first game listed is 1941: Counter Attack (World 900227)
-		# self.assertEqual(functions.game_descriptions(test_minidom_object), '1941: Counter Attack (World 900227)')
-		#
-		# This test isn't working as expected. Further reading suggests this may be an inappropriate use of unit tests
-		# since it relys on outside information. In this case; a dom object being passed in.
-
 if __name__ == '__main__':
 	unittest.main()
